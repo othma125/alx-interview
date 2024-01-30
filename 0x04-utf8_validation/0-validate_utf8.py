@@ -3,13 +3,15 @@
 uft8_validation module
 
 """
-def validUTF8(data):
+
+from typing import List
+
+
+def validUTF8(data: List[int]):
     """
     Determines if a given list of integers represents a valid UTF-8 encoding.
-    
     Args:
         data (List[int]): The list of integers representing the UTF-8 encoding.
-    
     Returns:
         bool: True if the encoding is valid, False otherwise.
     """
