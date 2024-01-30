@@ -15,7 +15,7 @@ def validUTF8(data: List[int]):
     Returns:
         bool: True if the encoding is valid, False otherwise.
     """
-    num_bytes = 0
+    num_bytes: int = 0
 
     for num in data:
         if num_bytes == 0:
