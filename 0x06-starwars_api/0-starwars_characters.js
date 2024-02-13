@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const request = require("request");
-const url = "https://swapi-api.hbtn.io/api/films/";
-const pross = require("process");
+const request = require('request');
+const url = 'https://swapi-api.hbtn.io/api/films/';
+const pross = require('process');
 
 if (pross.argv.length > 2) {
   request(url + pross.argv[2], function (error, response, body) {
@@ -22,7 +22,7 @@ if (pross.argv.length > 2) {
     );
 
     Promise.all(charactersName)
-      .then((names) => console.log(names.join("\n")))
+      .then((names) => console.log(names.join('\n')))
       .catch((allErr) => console.log(allErr));
   });
 }
